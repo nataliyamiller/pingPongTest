@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Ping-Pong Test</title>
+	</head>
+	<body>
+		<h2>Ping-Pong! :-)</h2>
+		<script src="epicodus.js"></script>
+		
+	</body>
+</html>
+
+
+/* JS file */
+
+var num = prompt("Type a number");
+
+var pingPong = function(number){
+	var array1 = [];
+	for (var i = 1; i <= num; i++) {
+		if ((i % 3 == 0) && (i % 5 == 0)) {
+			document.write(" ping-pong");
+		} else if ((i % 3 == 0) || (i % 5 == 0)){
+			if (i % 3 == 0){
+				document.write(" ping,");
+			} else {
+				document.write(" pong,");
+			}
+		}
+	 else {
+		document.write(" " + i + ",");
+	}
+}
+	}
+
+pingPong(num);
